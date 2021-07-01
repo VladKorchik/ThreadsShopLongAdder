@@ -1,9 +1,9 @@
 package ru.netology;
 
 public class TaxCounter implements Runnable {
-    private IFinalReport finalReport;
+    private Reportable finalReport;
 
-    final static int dataCountingTime = 2000;
+    final static int DATA_COUNTING_TIME = 2000;
 
     public TaxCounter(FinalReport finalReport) {
         this.finalReport = finalReport;
@@ -11,7 +11,7 @@ public class TaxCounter implements Runnable {
 
     public void run() {
         try {
-            Thread.sleep(dataCountingTime);
+            Thread.sleep(DATA_COUNTING_TIME);
         } catch (InterruptedException exception) {
             exception.printStackTrace();
         }

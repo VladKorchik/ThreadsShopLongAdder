@@ -2,7 +2,7 @@ package ru.netology;
 
 import java.util.concurrent.atomic.LongAdder;
 
-public class FinalReport implements IFinalReport{
+public class FinalReport implements Reportable{
     final private LongAdder stat;
 
     public FinalReport(LongAdder stat) {
